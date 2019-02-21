@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToBrew List</title>
+    <link href="/img/favicon.png" rel="icon">
+    <link href="/styles/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="header__title">ToBrew List 🍻</h1>
+            <h2 class="header__subtitle">A handy todo list for homebrewers!</h2>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="actions__container actions__container--spaced">
+            <a href="/index.html">Back to List</a>
+            <span id="last-edited"></span>
+        </div>
+    </div>
+    <div class="container">
+        <input id="brew-title" class="title-input" placeholder="Brew Name">
+        <textarea id="brew-body" class="body-input" placeholder="Brew Notes"></textarea>
+        <div class="ingredients-area">
+                <h2>Ingredients</h2>
+                <div id="ingredients-list"></div>
+                <form id="add-ingredient">
+                    <input type="text" class="ingredient-input" placeholder="Add Ingredient">
+                    <button class="button">Create</button>      
+                </form>
+
+        </div>
+        <button id="save-brew" class="button button--save">Save Brew</button>
+        <button id="remove-brew" class="button button--remove">Remove Brew</button>
+    </div>
+<script src="/scripts/edit-bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+
+/* // Colors
+$off-black: #20222b;
+$dark-blue: #333745;
+$blue: #3c4251;
+$light-blue: #464b5e;
+$off-white: #a5afd7;
+$purple: #8357c5;
+// Spacing
+$s-size: 1.2rem;
+$m-size: 1.6rem;
+$l-size: 3.2rem;
+$xl-size: 4.8rem;
+$desktop-breakpoint: 45rem; */
+
+
+/* Base Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #fafafa;
+    color: #151515;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: #e6a117;
+}
+
+/* Container */
+
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+/* Header */
+
+.header {
+    background: #FFC400;
+    color:white;
+    padding: 1.8rem;
+    height: 15vh;
+    text-align: center;
+}
+
+.header__title {
+    font-size: 4rem;
+    margin-bottom: .4rem;
+}
+
+.header__subtitle {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+/* Actions Bar */
+
+.actions {
+    background-color: rgba(152, 152, 153, 0.2);
+    padding: 2rem;
+    margin-bottom: 7vh;
+    
+}
+
+.actions__container {
+    align-items: center;
+    display: flex;
+    max-width: 60rem;
+    margin: 0 auto;
+    min-height: 3rem;
+    padding: 0 1.6rem;
+}
+
+.actions__container--spaced {
+    justify-content: space-between
+}
+
+.actions a {
+    font-size: 1.7rem;
+}
+
+#search-text {
+    margin: 0 auto;
+}
+
+/* Form Inputs */
+
+.input {
+    border: none;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 100;
+    height: 4rem;
+    width: 25rem;
+    margin-right: 1.6rem;
+    padding: .4rem .8rem;
+    text-align: center;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.06), 0 3px 4px rgba(0,0,0,0.06);
+}
+
+.checkbox {
+    display: flex;
+    align-items: baseline;
+}
+
+.checkbox > input {
+    margin-right: .4rem;
+}
+
+.button {
+    background: #FFC400;
+    width: 10vw;
+    height: 5vh;
+    border: none;
+    border-bottom: 2px solid #b47f16;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding: .8rem;
+    transition: background .3s ease, color .3s ease;
+}
+
+.button:hover {
+    background: #daae11;
+}
+
+.button--save {
+    background: rgba(8, 133, 8, 0.7);
+    border-bottom: 2px solid #0a5204;
+}
+
+.button--save:hover {
+    background: rgba(5, 102, 5, 0.7);
+
+}
+
+.button--remove {
+    background: #888888;
+    border-bottom: 2px solid #717171;
+}
+
+.button--remove:hover {
+    background: #6E6E6E;
+}
+
+.button--text {
+    background: none;
+    border: none;
+    color: #aaa;
+}
+
+.button--text:hover {
+    background: none;
+    color: white;
+    text-decoration: underline;
+}
+
+/* Brew editor */
+
+.title-input {
+    border: 1px solid #DEDFE0;
+    font-size: 2rem;
+    font-weight: 300;
+    display: block;
+    margin: 2.4rem 0;
+    padding: .8rem;
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05), 0 3px 6px rgba(0,0,0,0.10);
+}
+
+.body-input {
+    border: 1px solid #DEDFE0;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 100;
+    display: block;
+    margin: 2.4rem 0;
+    min-height: 15rem;
+    padding: .8rem;
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05), 0 3px 6px rgba(0,0,0,0.10);
+}
+
+/* Brew List Item */
+
+.list-item {
+    text-decoration: none;
+    color: #151515;
+    height: 9vh;
+    width: 40vw;
+    cursor: pointer;
+    background: rgba(226, 225, 225, 0.4);
+    margin: 1.6rem 0;
+    padding: 1rem 1.6rem;
+    display: block;
+    border: 1px solid transparent;
+    transition: border .3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.list-item__container {
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 300;
+    align-items: baseline;
+}
+
+.list-item__container > *:first-child {
+    margin-right: .8rem;
+}
+
+.list-item:hover {
+    border: 2px solid #FFC400;
+
+}
+
+.list-item__title {
+    font-size: 1.8rem;
+    margin-bottom: .4rem
+}
+
+.list-item__subtitle {
+    color: #666;
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.list-title {
+    margin: 3.2rem 0 1.6rem;
+}
+
+.empty-message {
+    margin: 3.2rem 0;
+}
+
+/* Ingredients */
+.ingredients-area {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+
+.ingredients-area h2 {
+    margin-bottom: 3%;
+}
+
+.ingredients-area input {
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 100;
+    height: 4rem;
+    width: 25rem;
+    margin-right: 1.6rem;
+    padding: .4rem .8rem;
+    text-align: center;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.06), 0 3px 4px rgba(0,0,0,0.06);
+}
